@@ -1,0 +1,103 @@
+.banner {
+  height: 200px;
+  background-color: #6b97cf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.texto-banner {
+  color: #21334B;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #21334B;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+.sidebar {
+  padding: 10px;
+  background-color: #A1ACB9;
+  width: 20%;
+}
+
+.sidebar img {
+  margin: 5px;
+  width: 100%;
+}
+
+footer {
+  background-color: #21334B;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.icono {
+  color: white;
+  margin: 5px;
+}
+
+.blog {
+  padding: 20px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog img {
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #21334B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #374F6B;
+}
+
+.contacto {
+  float: right;
+  background-color: #374F6B;
+}
+
+nav, aside, article, footer {
+  font-family: "Helvetica", Sans-Serif;
+}
+/*# sourceMappingURL=estilos.css.map */
