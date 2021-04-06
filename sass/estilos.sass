@@ -1,8 +1,12 @@
+//Variables
+
 $Azul: #6b97cf
 $Oscuro: #21334B
 $Oscuro2: #374F6B
 $Claro: #A1ACB9
 $Texto: "Helvetica", Sans-Serif
+
+//Selectores
 
 .banner
     height: 200px
@@ -27,6 +31,7 @@ $Texto: "Helvetica", Sans-Serif
     padding: 0.2rem 1rem
     background-color: $Claro
     width: 20%
+    order: 1
     img
         width: 100%
         position: relative
@@ -48,6 +53,7 @@ footer
 .blog
     padding: 0.2rem 1.5rem
     width: auto
+    order: 2
     p
         justify-content: center
     img
@@ -91,3 +97,38 @@ nav, aside, section, footer
 span
     background-color: $Oscuro
     padding: 0.2em
+
+//Media Queries
+
+@media screen and ( max-width: 1200px )
+    .flex-container
+        flex-direction: column-reverse
+
+    .sidebar
+        width: auto
+        text-align: center
+        img
+            width: 70%
+
+    .blog
+        width: auto
+        img
+            width: 70%
+
+    .paises
+        padding-left: 15rem
+
+@media screen and ( max-width: 768px )
+    ul
+        li
+            .contacto
+                float: none
+            float: none
+            width: 100%
+        
+    .blog
+        img
+            width: 100%
+
+    .paises
+        padding-left: 10rem

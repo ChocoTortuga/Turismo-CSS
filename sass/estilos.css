@@ -27,6 +27,9 @@
   padding: 0.2rem 1rem;
   background-color: #A1ACB9;
   width: 20%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .sidebar img {
@@ -53,6 +56,9 @@ footer {
 .blog {
   padding: 0.2rem 1.5rem;
   width: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .blog p {
@@ -115,5 +121,46 @@ nav, aside, section, footer {
 span {
   background-color: #21334B;
   padding: 0.2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sidebar {
+    width: auto;
+    text-align: center;
+  }
+  .sidebar img {
+    width: 70%;
+  }
+  .blog {
+    width: auto;
+  }
+  .blog img {
+    width: 70%;
+  }
+  .paises {
+    padding-left: 15rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul li {
+    float: none;
+    width: 100%;
+  }
+  ul li .contacto {
+    float: none;
+  }
+  .blog img {
+    width: 100%;
+  }
+  .paises {
+    padding-left: 10rem;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
